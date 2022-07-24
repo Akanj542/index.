@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.flex{display: flex;}
+.flexCe{display: flex;align-items: center;}
+.flexone{flex: 1;}
+.pd-10{padding: 10px;}
+body{background: #eee;}
+
+.header{
+    background: #fff;
+    color: #121212;
+    font-size: 14px;
+    font-family: 'bahnschrift';
+}
+.menu-mobile{
+    display: none;
+    margin: auto 10px;
+    padding: 6px;
+    position: relative;
+    width: 17px;
+    height: 13px;
+    cursor: pointer;
+    border-radius: 5px;border: solid 1px #0004;
+}
+.menu-mobile:hover, [array-lable="true"]{
+    background: #0001;
+}
+.menu-mobile span, .menu-mobile span::before, .menu-mobile span::after{
+    background: #000;
+    position: absolute;
+    margin: 0 auto;
+    top: 12px;
+    display: block;
+    width: 14px;
+    height: 2px;
+    border-radius: 5px;
+}
+
+.menu-mobile span::before, .menu-mobile span::after{
+width: 17px; content: '';
+}
+.menu-mobile span::before{ top: 6px;}
+.menu-mobile span::after{ top: -6px;}
+
+.header-logo{
+    width: 100px;
+    height: 35px;
+    padding: 2px;
+    margin-left: 5px;
+}
+
+.header-logo img{
+    width: auto;
+    height: 35px;
+    cursor: pointer;
+}
+
+.menu-list{
+    list-style: none;
+}
+
+.menu-list .menu-item-link{
+    color: #4e4e4e;
+    font-size: 13px;
+    padding: 8px 10px;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.menu-list .menu-item-link:hover{
+    color: #3b3b3b;
+    background: #eee !important;
+}
+
+.login-button{
+    background:#00ade4;
+    color: #fff;
+    border-radius: 3px;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-family: roboto;
+}
+
+.login-button:hover{
+    background: #008bb7;
+}
+
+
+
+/* Mobile Session  */
+
+.mobile-menu-lists{
+    position: relative;
+    display: block;
+    height: auto;
+    background: #fff;
+    border-top: solid 1px#0001;
+}
+
+.mobile-menu-list{
+    list-style: none;
+}
+
+.mobile-menu-item-link{
+    text-decoration: none;
+    display: block;
+    padding: 8px 10px;
+    border-radius: 5px;
+    color: #0009;
+    font-family:  roboto;
+}
+.mobile-menu-item-link:hover{
+    color: #008bb7;
+    background: #0001;
+}
+
+@media screen and (max-width:680px) {
+    .menu-mobile{
+        display:  block;
+    }
+    .menu-lists{
+        display: none !important;
+    }
+}
